@@ -1,6 +1,8 @@
 import corpcommentImg from './corpcomment.png';
 import rmtdevImg from './rmtdev.png';
 import wordanalyticsImg from './wordanalytics.png';
+import { FaFileAlt, FaGraduationCap, FaBriefcase, FaReact } from "react-icons/fa";
+
 
 export const links = [
   {
@@ -31,25 +33,28 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "DigitalHouse | Bootcamp",
+    location: "Buenos Aires, AR",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
-    date: "2019",
+      "Curso de modalidad intensiva de desarrollo web full-stack. Aprendi a usar node.js y vanilla javascript",
+      date: "2022",
+    icon:<FaGraduationCap/>
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Presidencia de la Nacion",
+    location: "Buenos Aires, AR",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    date: "2019 - 2021",
+    "Desarrollé e implementé aplicaciones web y API utilizando React, Django, Docker y Gitlab.",
+    date: "2022 - Presente",
+    icon:<FaFileAlt/>
   },
   {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
+    title: "Bigho",
+    location: "Buenos Aires, AR",
     description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    date: "2021 - present",
+      "Co-founder en Bigho. Realizamos desarrollo de software desde cero e implementaciones de software libre. Realizamos aplicaciones webs informativos, E-commerce, Blogs o sistemas de gestión.",
+    date: "2022 - Presente",
+    icon:<FaBriefcase/>
   },
 ];
 

@@ -1,15 +1,17 @@
 "use client";
 import Image from 'next/image';
-import React from 'react';
 import {motion} from "framer-motion";
 import Link from 'next/link';
 import { BsArrowRight, BsLinkedin } from "react-icons/bs"
 import { HiDownload } from 'react-icons/hi'
 import { FaGithubSquare } from "react-icons/fa";
+import { useSectionInView } from '../hooks/hooks'
 
 const Intro = () => {
+  const { ref } = useSectionInView('Home', 0.5);
+
   return (
-    <section className='mb-28 max-w-[50rem] text-center sm:mb-0 z-20'>
+    <section ref={ref} id='home' className='mb-28 max-w-[50rem] text-center sm:mb-0 z-20 scroll-mt-[100rem]'>
         <div className='flex items-center justify-center'>
             <div className='relative'>
                 <motion.div
@@ -17,7 +19,7 @@ const Intro = () => {
                     animate={{opacity:1, scale:1}}
                 >                 
                     <Image 
-                        src="https://picsum.photos/200/300" 
+                        src="https://media.licdn.com/dms/image/C4E03AQFQ-3wSkZW9MA/profile-displayphoto-shrink_800_800/0/1633475417368?e=1707350400&v=beta&t=8Bf7syabRfXWwguZCjKlyL-c4Xdcwyw08Bic6ZGiRzc" 
                         alt="Joaquin Gerez" 
                         width="192" 
                         height="192" 
@@ -74,7 +76,7 @@ const Intro = () => {
             <a className='bg-white p-4 flex items-center text-gray-700 gap-2 rounded-full
              focus:scale-110 hover:scale-110 active:scale-105 transition
             '
-            href="https://linkedin.com/joaquinlgerez" target="_blanck"
+            href="https://www.linkedin.com/in/joaquin-gerez/" target="_blanck"
             >
                 <BsLinkedin />
             </a>
