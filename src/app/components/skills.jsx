@@ -7,6 +7,7 @@ import { motion } from 'framer-motion'
 
 export default function Skills() {
     const { ref } = useSectionInView('Skills', 0.5);
+    
     const fadeInAnimationVariants = {
         initial: {
           opacity: 0,
